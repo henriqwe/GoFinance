@@ -19,6 +19,7 @@ module.exports = {
         alias: {
           '@tailwind': ['./tailwind.ts'],
           '@components': './src/components',
+          '@utils': './src/utils',
         },
       },
     ],

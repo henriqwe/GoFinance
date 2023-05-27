@@ -1,25 +1,18 @@
-import {Header} from '@components/Header';
+import {Header} from '@components/Header/Header';
 import tw from '@tailwind';
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme, View} from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {SafeAreaView, StatusBar, View, Text} from 'react-native';
 
 export function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <View style={tw` bg-background w-full h-full`}>
+    <SafeAreaView style={tw`bg-primary`}>
+      <StatusBar barStyle={'light-content'} backgroundColor={'#5636D3'} />
+      <View style={tw`bg-background w-full h-full`}>
         <Header />
+
+        <View style={tw`px-6`}>
+          <Text style={tw`font-poppins text-lg`}>Listagem</Text>
+        </View>
       </View>
     </SafeAreaView>
   );
