@@ -68,7 +68,7 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <View style={tw`bg-red-400 w-6 h-6`} />
+      <View style={tw`bg-primary w-6 h-6 `} />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
@@ -77,10 +77,13 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
-            aaEdit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
+          <View style={tw`flex-col`}>
+            <Text style={tw`font-poppins`}>teste</Text>
+            <Text style={tw`font-poppins`}>teste</Text>
+
+            <Text style={tw`font-poppinsMedium`}>teste</Text>
+            <Text style={tw`font-poppinsBold`}>teste</Text>
+          </View>
           <Section title="See Your Changes">
             <ReloadInstructions />
           </Section>
