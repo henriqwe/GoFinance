@@ -138,6 +138,9 @@ export const BRLMoneyInputDefaultFormat = (e: string | number | undefined) => {
 };
 
 export const BRLMoneyFormat = (value: string | number) => {
+  if (value === undefined) {
+    value = 0;
+  }
   value = Number(value) / 100;
   value = value.toLocaleString('pt-br', {
     style: 'currency',
