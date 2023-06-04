@@ -1,14 +1,15 @@
 import tw from '@tailwind';
 
-export const HeaderStyle = tw`
-bg-primary
-h-28
+export const buttonStyle = tw`
+w-full 
+p-4
+bg-secondary
+rounded-md
 justify-center
 items-center
 `;
-
 export const titleStyle = tw`
 text-white
 font-poppins
-text-lg
+text-sm
 `;

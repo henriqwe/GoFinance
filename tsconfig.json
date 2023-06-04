@@ -14,8 +14,8 @@
     "paths": {
       "@tailwind": ["tailwind.ts"],
       "@components/*": ["src/components/*"],
-      "@utils/*": ["src/utils/*"]
-
+      "@utils/*": ["src/utils/*"],
+      "@screens/*": ["src/screens/*"]
     },
     /* Language and Environment */
     "target": "esnext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */

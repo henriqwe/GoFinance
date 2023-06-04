@@ -20,6 +20,7 @@ module.exports = {
           '@tailwind': ['./tailwind.ts'],
           '@components': './src/components',
           '@utils': './src/utils',
+          '@screens': './src/screens',
         },
       },
     ],
