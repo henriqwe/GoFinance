@@ -9,3 +9,13 @@ rounded-md
 font-poppins
 text-black
 `;
+
+export const containerStyle = tw`
+gap-2
+`;
+
+export const errorTextStyle = tw`
+pl-4
+
+text-danger
+`;
