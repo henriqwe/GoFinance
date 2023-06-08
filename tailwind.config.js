@@ -9,6 +9,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        'high-green': '#D0FD3E',
+        'gray-2': '#1C1C1E',
+        'gray-1': '#2C2C2E',
         primary: {
           DEFAULT: '#5636D3',
           medium: '#755BDA',
